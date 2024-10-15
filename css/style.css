@@ -9,7 +9,13 @@ img {
     max-width: 100%;
 }
 
+ul>li {
+    list-style: none;
+}
 
+a {
+    text-decoration: none;
+}
 
 /* MAIN */
 .wrapper {
@@ -20,6 +26,8 @@ img {
     /* debug */
     border: 2px solid #b667ea;
 }
+
+
 
 /* MENU */
 .menu {
@@ -33,7 +41,7 @@ img {
 }
 
 .menu>div {
-    padding: 20px 0;
+    padding: 20px 10px;
     line-height: 30px;
 }
 
@@ -52,14 +60,68 @@ img {
     background-color: #753d9b;
 }
 
+.header {
+    background-color: #000000;
+    padding: 35px 0;
+    text-align: end;
+}
+
+.button {
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+/* .nav-bookshelf {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.nav-bookshelf>li {
+    padding: 20px;
+} */
+
+
+
 /* FOOTER- barra di riproduzione */
 
-.playback {
-    height: 100px;
+.playback{
+    display: flex;
     /* debug */
+    height: 100px;
     background-color: #e786e7;
-    border: 2px solid #ffffff
+    border: 2px solid #ffffff;
 }
+
+.in-play {
+    width: 20%;
+    /* debug */
+   
+    border: 1px solid white;
+    background-color: #963de8;
+}
+
+.bar {
+    width: 60%;
+    /* debug */
+    
+    border: 1px solid white;
+    background-color: #4e1b7e;
+}
+
+.instruments {
+    width: 20%;
+    /* debug */
+    
+    border: 1px solid white;
+    background-color: #963de8;
+}
+
+
+
 
 /**************************/
 /* Responsive */
@@ -81,6 +143,10 @@ img {
         background-color: #753d9b;
     }
 
+    .none {
+        display: none;
+    }
+
     /* LIBRERIA */
     .bookshelf {
         width: calc(100% - 50px);
@@ -90,8 +156,9 @@ img {
         background-color: #753d9b;
     }
 
-    .none {
-        display: none;
+    .header {
+        padding: 25px 0;
+        font-size: 10px;
     }
 
 }
