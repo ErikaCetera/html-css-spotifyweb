@@ -1,4 +1,5 @@
 /* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +17,7 @@ ul>li {
 a {
     text-decoration: none;
 }
+
 
 /* MAIN */
 .wrapper {
@@ -41,7 +43,7 @@ a {
 }
 
 .menu>div {
-    padding: 20px 10px;
+    padding: 10px;
     line-height: 30px;
 }
 
@@ -54,12 +56,14 @@ a {
 /* LIBRERIA */
 .bookshelf {
     width: calc(100% - 200px);
+    overflow: auto;
 
     /* debug */
     border: 2px solid #ffffff;
     background-color: #753d9b;
 }
 
+/* header */
 .header {
     background-color: #000000;
     padding: 35px 0;
@@ -73,22 +77,50 @@ a {
     color: #ffffff;
 }
 
-/* .nav-bookshelf {
+/* nav-lebreria */
+.nav-bookshelf {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-
 }
 
 .nav-bookshelf>li {
     padding: 20px;
-} */
+}
+
+/* Tracce*/
+.track {
+    padding: 20px;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.col {
+    width: calc(100%/6);
+    text-align: center;
+    padding: 20px 10px 30px;
+}
+
+.track h2 {
+    padding-bottom: 10px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+
 
 
 
 /* FOOTER- barra di riproduzione */
 
-.playback{
+.playback {
     display: flex;
     /* debug */
     height: 100px;
@@ -99,7 +131,7 @@ a {
 .in-play {
     width: 20%;
     /* debug */
-   
+
     border: 1px solid white;
     background-color: #963de8;
 }
@@ -107,7 +139,7 @@ a {
 .bar {
     width: 60%;
     /* debug */
-    
+
     border: 1px solid white;
     background-color: #4e1b7e;
 }
@@ -115,7 +147,7 @@ a {
 .instruments {
     width: 20%;
     /* debug */
-    
+
     border: 1px solid white;
     background-color: #963de8;
 }
@@ -126,10 +158,19 @@ a {
 /**************************/
 /* Responsive */
 /* M */
-@media screen and (max-width:1024px) {}
+@media screen and (max-width:1024px) {
+    .col {
+        width: calc(100%/4);
+
+    }
+}
 
 /* S */
-@media screen and (max-width:786px) {}
+@media screen and (max-width:786px) {
+    .col {
+        width: calc(100%/2);
+    }
+}
 
 /* XS */
 @media screen and (max-width:425px) {
@@ -159,6 +200,11 @@ a {
     .header {
         padding: 25px 0;
         font-size: 10px;
+    }
+
+    .nav-bookshelf>li {
+        font-size: 10px;
+        padding: 5px;
     }
 
 }
