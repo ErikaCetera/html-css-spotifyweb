@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Spotify</title>
 </head>
@@ -19,23 +21,28 @@
             <!-- logo -->
             <div class="logo">
                 <img class="none" src="./css/img/logo.svg" alt="LOGO">
-                <img class="logo-small"src="./css/img/logo-small.svg" alt="">
+                <img class="logo-small" src="./css/img/logo-small.svg" alt="">
             </div>
 
             <!-- nav -->
             <div class="nav">
                 <ul>
-                    <li><a href=""><img class="small" src="./css/img/home.svg" alt=""><span class="none text-gray"> Home</span></a></li>
-                    <li><a href=""><img class="small" src="./css/img/search.svg" alt=""><span class="none"> Cerca</span></a></li>
-                    <li><a href=""><img class="small" src="./css/img/libreria.svg" alt=""><span class="none"> La tua Libreria</span></a></li>
+                    <li><a href=""><img class="small border-left" src="./css/img/home.svg" alt=""><span
+                                class="none text-white"> Home</span></a></li>
+                    <li><a href=""><img class="small" src="./css/img/search.svg" alt=""><span class="none">
+                                Cerca</span></a></li>
+                    <li><a href=""><img class="small" src="./css/img/libreria.svg" alt=""><span class="none"> La tua
+                                Libreria</span></a></li>
                 </ul>
             </div>
 
             <!-- playlist -->
             <div class="playlist none">
                 <h4>PLAYLIST</h4>
-                <a class="button-add" href=""><i class="fa-solid fa-plus"></i></a>
-                <span class="text-gray" >Crea Playlist</span>
+                <div class="add">
+                    <a class="button-add" href=""><i class="fa-solid fa-plus"></i></a>
+                    <span class="text-gray">Crea Playlist</span>
+                </div>
                 <ul>
                     <li><a href="">Nome Playlist</a></li>
                     <li><a href="">Nome Playlist</a></li>
@@ -49,7 +56,8 @@
 
             <!-- Installa app- Nome profilo -->
             <div class="install">
-                <a href=""><img class="small" src="./css/img/download.svg" alt=""><span class="none text-gray"> Installa app</span></a>
+                <a href=""><img class="small" src="./css/img/download.svg" alt=""><span class="none text-gray"> Installa
+                        app</span></a>
                 <hr class="divider">
                 <h4 class="none "><img class="small circle-profile" src="./css/img/profile.svg" alt=""> John Doe</h4>
             </div>
@@ -64,7 +72,7 @@
             <!-- Nav Libreria -->
             <div>
                 <ul class="nav-bookshelf">
-                    <li><a href="">IN EVIDENZA</a></li>
+                    <li><a class="border-bot" href="">IN EVIDENZA</a></li>
                     <li><a href="">PODCAST</a></li>
                     <li><a href="">CLASSIFICHE</a></li>
                     <li><a href="">GENERI E MOOD</a></li>
@@ -81,30 +89,55 @@
                     <h2>Recently played</h2>
                     <div class="row">
                         <div class="col">
-                            <a href=""><img src="./css/img/metal_lifting.jpg" alt="foto album traccia metal"></a>
+                            <div class="play-circle">
+                                <a href=""><img src="./css/img/metal_lifting.jpg" alt="foto album traccia metal"></a>
+                                <i class=" play fa-solid fa-play-circle"></i>
+                            </div>
                             <h4>Heavy Metal</h4>
                             <p>Subtitle</p>
                         </div>
-                        <div class="col"><a href=""><img src="./css/img/stranger.jpeg"
-                                    alt="foto album traccia stranger things"></a>
+
+                        <div class="col">
+                            <div class="play-circle">
+                                <a href=""><img src="./css/img/stranger.jpeg"
+                                        alt="foto album traccia stranger things"></a>
+                                <i class=" play fa-solid fa-play-circle"></i>
+                            </div>
                             <h4>Stranger Things, Vol.1(a Netflix Orginal Series Soundtrack)</h4>
                             <p>Kyle Dixon & Michael Stein</p>
                         </div>
-                        <div class="col"><a href=""><img src="./css/img/aquietplace.jpeg"
-                                    alt="foto album traccia aquitplace"></a>
+
+                        <div class="col">
+                            <div class="play-cirle">
+                                <a href=""><img src="./css/img/aquietplace.jpeg"
+                                        alt="foto album traccia aquitplace"></a>
+                                <i class=" play fa-solid fa-play-circle"></i>
+                            </div>
                             <h4>A quiet place</h4>
                             <p>Subtitle</p>
                         </div>
-                        <div class="col"><a href=""><img src="./css/img/split.jpeg" alt="foto album traccia split"></a>
+
+                        <div class="col">
+                            <div class="play-circle">
+                                <a href=""><img src="./css/img/split.jpeg" alt="foto album traccia split"></a>
+                                <i class=" play fa-solid fa-play-circle"></i>
+                            </div>
                             <h4>Split</h4>
                             <p>Subtitle</p>
                         </div>
-                        <div class="col"><a href=""><img src="./css/img/cure.jpeg" alt="foto album traccia cure"></a>
+                        <div class="col">
+                            <div class="play-circle">
+                                <a href=""><img src="./css/img/cure.jpeg" alt="foto album traccia cure"></a>
+                                <i class=" play fa-solid fa-play-circle"></i>
+                            </div>
                             <h4>A cure fo wellness</h4>
                             <p>Subtitle</p>
                         </div>
-                        <div class="col"><a href=""><img src="./css/img/sinister.jpeg"
-                                    alt="foto album traccia sinister"></a>
+                        <div class="col">
+                            <div class="play-circle">
+                                <a href=""><img src="./css/img/sinister.jpeg" alt="foto album traccia sinister"></a>
+                                <i class=" play fa-solid fa-play-circle"></i>
+                            </div>
                             <h4>Sinister</h4>
                             <p>Subtitle</p>
                         </div>
