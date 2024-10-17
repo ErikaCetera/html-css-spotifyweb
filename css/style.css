@@ -68,6 +68,7 @@ p,
     width: 200px;
     position: relative;
     background-color: #000000;
+    overflow:auto;
 }
 
 .menu>div {
@@ -201,14 +202,16 @@ h4 {
 footer{
     background-color: #282828;
 }
+
 .playback {
-    height: 100px;
+    min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
  /* in play */
 .in-play {
+    width: 20%;
     display: flex;
     gap: 20px;
 }
@@ -223,6 +226,13 @@ footer{
 }
 
 /* bar */
+.bar{
+    width: 60%;
+    text-align: center;
+}
+
+
+
 .bar .fa-solid {
     font-size: 35px;
     padding: 10px;
@@ -234,6 +244,11 @@ footer{
 }
 
 /* instrument */
+.instrument{
+    width: 20%;
+}
+
+
 .vol{
     display: inline-block;
     width: 100px;
@@ -256,7 +271,21 @@ footer{
 @media screen and (max-width:878px) {
     .col {
         width: calc(100%/2);
+
     }
+
+    .bar .fa-solid{
+        font-size: 20px;
+    }
+
+    .vol{
+        width: 20px;
+    }
+
+
+
+}
+   
 
 /* XS */
 @media screen and (max-width:552px) {
@@ -271,6 +300,7 @@ footer{
 
     .menu {
         width: 50px;
+        margin: 0%;
     }
 
     .none {
