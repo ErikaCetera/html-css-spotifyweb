@@ -112,16 +112,31 @@ div.add:hover .button-add {
 
 /* header */
 .header {
-    background-color: #080b12;
-    padding: 35px 0;
+    height: 100px;
+    padding: 30px 0;
     text-align: end;
+    background-color: rgba(8, 11, 18, 255)
 }
 
-.button {
+a.button {
     border: 2px solid #ffffff;
     border-radius: 100px;
     padding: 10px 20px;
     color: #ffffff;
+}
+
+.button:hover {
+    display: inline-block;
+    transform: scale(1.1);
+}
+
+.fixed{
+    
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100vw;
+    padding:35px;
 }
 
 /* nav-lebreria */
@@ -165,6 +180,7 @@ h4 {
 
 .play-circle {
     position: relative;
+
 }
 
 .play {
@@ -173,46 +189,56 @@ h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    /* z-index: -1; */
+    z-index: -1;
 }
 
+.play-circle:hover .play {
+    z-index: 1;
+}
 
 
 /* FOOTER- barra di riproduzione */
-
+footer{
+    background-color: #282828;
+}
 .playback {
-    display: flex;
-    /* debug */
     height: 100px;
-    background-color: #e786e7;
-    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
+ /* in play */
 .in-play {
-    width: 20%;
-    /* debug */
-
-    border: 1px solid white;
-    background-color: #963de8;
+    display: flex;
+    gap: 20px;
 }
 
-.bar {
-    width: 60%;
-    /* debug */
-
-    border: 1px solid white;
-    background-color: #4e1b7e;
+.img-small{
+    width: 50px;
+}
+.fa-regular,
+.instrument .fa-solid{
+    color: #716b6b;
+    padding: 10px;
 }
 
-.instruments {
-    width: 20%;
-    /* debug */
-
-    border: 1px solid white;
-    background-color: #963de8;
+/* bar */
+.bar .fa-solid {
+    font-size: 35px;
+    padding: 10px;
 }
 
+.div-bar{
+    margin: 20px;
+    width: 500px;
+}
+
+/* instrument */
+.vol{
+    display: inline-block;
+    width: 100px;
+   margin:5px;
+}
 
 
 
@@ -227,14 +253,13 @@ h4 {
 }
 
 /* S */
-@media screen and (max-width:786px) {
+@media screen and (max-width:878px) {
     .col {
         width: calc(100%/2);
     }
-}
 
 /* XS */
-@media screen and (max-width:425px) {
+@media screen and (max-width:552px) {
     body {
         font-size: small;
     }
@@ -253,18 +278,15 @@ h4 {
     }
 
     /* LIBRERIA */
-    .bookshelf {
+     .bookshelf {
         width: calc(100% - 50px);
     }
 
     .header {
         padding: 25px 0;
         font-size: 10px;
+        
     }
-
-    .nav-bookshelf>li {
-        font-size: 10px;
-        padding: 5px;
-    }
+    
 
 }
